@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+   /* border:2px solid red;*/
+    padding: auto;
+    margin: auto;
+}
+.navpart{
+ /* justify-content: space-evenly;*/
+ background-color: antiquewhite;
+ display: flex;
+ justify-content: space-around;
+}
+.yy a{
+text-decoration: none;
+}
+#logo{
+   /* border: solid black;*/
+    padding: 0px;
+    margin: 20px;
+    width: 110px;
+    background-color: rgb(153, 187, 187);
+    font-style: italic;
+    font-family: fantasy;
+} 
+#btn{
+   /* border: solid green;*/
+    cursor: grab; 
+    /*background-color: rgb(210, 186, 186);*/
+}
+.bookmark{
+   /* border: 2px solid red;*/
+    display: flex;
+}
+.content{
+   /* border: solid green;*/
+    width: 50%;
+    height: 300px;
+}
+.square{
+   /* border: 2px solid black;*/
+    width: 50%;
+    height: 300px;
+    background-color: rgba(191, 85, 191, 0.615);
+    border-radius: 50px;
+    
+}
+.square img{
+    width: 400px;
+    height: 200px;
+}
+button{
+    background-color: blueviolet;
+}
+.features{
+   /*  border: 2px solid pink;*/
+    display: flex;
+    text-align: center;       
+}
+.text1{
+    /* border: solid black;
+   text-align: end;*/
+    margin-left: 300px;
+}
+#page{
+    /*border: solid red;*/
+    display: flex;
+    justify-content: space-around;
+    /* margin-inline: 400px; */
+    margin-top: 60px;
+    margin-bottom: 60px ;
+}
+.curved{
+   
+   /* border: 2px solid black;*/
+   width: 50%;
+   height: 300px;
+   background-color: rgba(191, 85, 191, 0.615); 
+   border-radius: 50px;
+}
+
+.img1{
+    width: 400px;
+    height: 200px;
+    /* margin-inline: 275px; */
+}
+.book{
+    display: flex;
+}
+.concurved{
+    text-align: center;
+    /* margin-inline: 100px; */
+    
+}
+.extension{
+   /* border: solid red;
+    display: flex;*/
+    text-align: center;
+    /* margin-inline: 400px; */
+    margin-top: 60px;
+
+}
+.row{
+    display: flex;
+    /* margin-inline: 300px; */
+    margin-top: 40px;
+}
+.Frequently{
+    position: sticky;
+    /* margin-inline: 500px; */
+    margin-top: 60px;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom:  10px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top:  50px;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.morefo{
+    /* margin-inline: 600px; */
+    margin-top: 120px;
+    /* border: solid red; */
+    width: 100px;
+    height: 40px;
+}
+.morefo button{
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    font-size: large;
+}
+footer{
+   /* border: dotted red;*/
+    background-color: blueviolet;
+    margin-top: 40px;
+}
+
+.form{
+    display: inline;
+    text-align: center;
+}
+.footerlast{
+    display: flex;
+    margin-top: 40px;
+    background-color: rgb(14, 1, 25);
+    margin-left: auto;
+    margin-right: auto;
+}
+#yy a{
+    text-decoration: none;
+}
+
+@media screen and (max-width:780px) and (min-width:580px){
+    .bookmark{
+        flex-direction: column-reverse;
+    }
+
+    .book{
+        flex-direction: column;
+    }
+    .extension{
+        margin: 100px 100px 0 100px;
+    }
+    .row{
+        margin-left: 10px;
+        margin-right: 10px;
+        /* flex-direction: column; */
+    }
+    .card{
+        margin: 0px;
+    }
+    .Frequently{
+        margin: 100px 100px 0 100px;
+    }
+    .hrtag{
+        margin: 100px 100px 0 100px;
+    }
+    .morefo{
+        width: 100px;
+        height: 50px;
+        margin-inline: 150px;
+    }
+    .morefo button{
+        height: 100%;
+        width: 100%;
+        border-radius: 40px;
+    }
+    .footers{
+        margin: 100px 100px 0 100px; 
+    }
+
+}
+
+@media screen and (max-width:680px) and (min-width:280px){
+  
+
+     .navpart{
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+        /* display: flex; */
+}
+.yy{
+    display: none;
+}
+.navpart a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  .navpart a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navpart a:hover {
+    background-color: #a79c9c;
+    color: black;
+  }
+  
+    .bookmark{
+        flex-direction: column-reverse;
+    }
+
+    .book{
+        flex-direction: column;
+    }
+    .extension{
+        margin: 100px 100px 0 100px;
+    }
+    .text1{
+        margin: 70px 70px 0 70px;
+    }
+    .row{
+        flex-direction: column;
+        margin: 100px 100px 0 80px;
+    } 
+    .card{
+        /* border: solid red; */
+        width: 50px;
+    } 
+    .card-body h3 p{
+        font-size: large;
+    }
+    .card-img-top{
+        width: 100%;
+    }
+    #page{
+        flex-direction: column;
+        margin: 100px 100px 0 100px;
+    }
+    .img1{
+        width: 100%;
+        margin-left: 100px;
+    }
+    .Frequently{
+        margin: 100px 100px 0 100px;
+    }
+    .hrtag{
+        margin: 100px 100px 0 100px;
+    }
+    .morefo{
+        width: 100px;
+        height: 50px;
+        margin-inline: 150px;
+    }
+    .morefo button{
+        height: 100%;
+        width: 100%;
+        border-radius: 40px;
+    }
+    .form input{
+        flex-direction: column;
+    }
+    .footers{
+        flex-direction: column;
+        margin: 100px 100px 0 100px; 
+    }
+    #yy{
+        flex-direction: column;
+    }
+}
